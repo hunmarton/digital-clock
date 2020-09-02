@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+
+<body>
+    <!--Navigation-->
+    <nav>
+        <ul>
+            <li class="clock-btn active">Clock</li>
+            <li class="stopwatch-btn">Stopwatch</li>
+            <li class="timer-btn">Timer</li>
+        </ul>
+    </nav>
+    <!--Clock-->
+    <div class="clock">
+        <h3><span class="clday">--</span>/<span class="clmonth">--</span>/<span class="clyear">--</span></h3>
+        <h1><span class="clhour">hh</span>:<span class="clMin">mm</span>:<span class="clSec">ss</span></h1>
+    </div>
+    <!--StopWatch-->
+    <div class="stopWatch">
+        <ul>
+            <li class="start sWatch">Start</li>
+            <li class="pause sWatch">Pause</li>
+            <li class="stop sWatch">Reset</li>
+        </ul>
+        <h1><span class="hour">00</span>:<span class="minutes">00</span>:<span class="seconds">00</span></h1>
+    </div>
+    <!--Timer-->
+    <div class="timer">
+        <form class="inputs">
+            <div class="hours">
+                <label for="hour">Hours</label>
+                <input type="number" name="hour" id="hour" min="0" max="10" value="0">
+            </div>
+            <div class="minutes">
+                <label for="minutes">Minutes</label>
+                <input type="number" name="minutes" id="minutes" min="0" max="59" value="0">
+            </div>
+            <div class="seconds">
+                <label for="seconds">Seconds</label>
+                <input type="number" name="seconds" id="seconds" min="0" max="59" value="0">
+            </div>
+            <input type="submit" value="SET" name="submit">
+        </form>
+        <h1><span class="timerHours">00</span>:<span class="timerMinutes">00</span>:<span class="timerSeconds">00</span>
+        </h1>
+        <ul>
+            <li class="startTimer timer-btn">Start</li>
+            <li class="pauseTimer timer-btn">Pause</li>
+            <li class="resetTimer timer-btn">Reset</li>
+        </ul>
+        <div class="message"></div>
+    </div>
+    <script src="assets/bundle.js"></script>
+</body>
+
+</html>
